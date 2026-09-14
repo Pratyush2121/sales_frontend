@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+// Fresh deployment build trigger
 import { useAuth } from '../context/AuthContext';
 import { AppName } from '../context/BrandingContext';
 import { HardHat, Lock, Mail, ShieldAlert, ArrowRight } from 'lucide-react';
