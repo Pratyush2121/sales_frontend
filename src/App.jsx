@@ -9,6 +9,7 @@ import { MasterDashboardView } from './pages/MasterDashboardView';
 import { InventoryHubView } from './pages/InventoryHubView';
 import { AuditLogView } from './pages/AuditLogView';
 import { SiteFinanceView } from './pages/SiteFinanceView';
+import { WelcomeGuideModal } from './components/WelcomeGuideModal';
 
 // Protected Route Wrapper
 const ProtectedRoute = ({ children, allowedRoles }) => {
@@ -57,6 +58,7 @@ export function App() {
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Navbar />
+      <WelcomeGuideModal />
       <main style={{ flex: 1, paddingBottom: '3rem' }}>
         <Routes>
           <Route path="/login" element={<LoginView />} />

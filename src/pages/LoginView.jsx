@@ -141,41 +141,7 @@ export const LoginView = () => {
               disabled={loading}
             >
               {loading ? 'Logging in...' : 'Sign In'} <ArrowRight size={16} />
-            </button>
           </form>
-
-          {/* Quick Demo Login */}
-          <div style={{ marginTop: '1.25rem', paddingTop: '1rem', borderTop: '1px solid #e2e8f0' }}>
-            <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#64748b', marginBottom: '0.5rem', textAlign: 'center' }}>
-              Quick Demo Accounts (Password: Password123!)
-            </div>
-            <div style={{ display: 'flex', gap: '0.35rem', flexWrap: 'wrap' }}>
-              <button
-                type="button"
-                className="btn btn-secondary"
-                style={{ flex: 1, padding: '0.3rem 0.5rem', fontSize: '0.72rem', minHeight: '30px' }}
-                onClick={() => fillDemoAccount('master@sitemaster.com')}
-              >
-                Master Admin
-              </button>
-              <button
-                type="button"
-                className="btn btn-secondary"
-                style={{ flex: 1, padding: '0.3rem 0.5rem', fontSize: '0.72rem', minHeight: '30px' }}
-                onClick={() => fillDemoAccount('admin@sitemaster.com')}
-              >
-                Admin
-              </button>
-              <button
-                type="button"
-                className="btn btn-secondary"
-                style={{ flex: 1, padding: '0.3rem 0.5rem', fontSize: '0.72rem', minHeight: '30px' }}
-                onClick={() => fillDemoAccount('supervisor@sitemaster.com')}
-              >
-                Supervisor
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
